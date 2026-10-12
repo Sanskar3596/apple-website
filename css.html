@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Demo Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #222;
+            text-align: center;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 25px;
+        }
+
+        main {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 18px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Demo Website</h1>
+        <p>Welcome to my HTML project!</p>
+    </header>
+
+    <main>
+        <h2>Hello, Developer! 👋</h2>
+        <p>This is my new demo webpage.</p>
+
+        <button onclick="showMessage()">Click Me</button>
+    </main>
+
+    <footer>
+        <p>Created by Sahuansh | 2026</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Hello! Your demo website is working!");
+        }
+    </script>
+</body>
+</html>
