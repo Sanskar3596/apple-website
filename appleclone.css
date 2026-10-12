@@ -1,0 +1,169 @@
+*{
+    margin:0px;
+    padding:0px;
+  background-color:whitesmoke;
+   font-family: "Basic", sans-serif;
+   overflow-x:hidden;
+}
+
+
+.navbar{
+    height:50%;
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    font-size:15px;
+}
+
+.nav{
+    display:flex;
+flex-direction:row;
+}
+span{
+    padding-left:30px;
+}
+
+i{
+    padding-left:30px;
+}
+
+.nav-items{
+
+ margin-top:15px;
+}
+
+#two-nav{
+justify-content:space-around;
+ 
+}
+
+  .See{
+    text-decoration:none;
+    flex-wrap:wrap;
+     display:flex;
+   align-items:center;
+    justify-content:center;
+    color:blue;
+padding-top:5px;
+padding-right:160px;
+background-color:white;
+  }
+
+
+#two-nav p{
+ height:50%;
+  background-color:white;
+   padding-left:300px;
+   padding-top:40px;
+}
+
+.body{
+    height:50%;
+    padding-top:60px;
+    padding-left:160px;
+   text-align:left;
+    display:flex;
+    flex-direction:row;
+    font-family: "Georgia", serif;
+  }
+   #three a{
+       color:rgba(5, 5, 248, 0.9);
+   }
+
+
+
+
+#body1{
+     font-size:70px;
+}
+
+#body2{
+   display:flex;
+   flex-direction:column;
+   align-items:flex-end;
+   justify-content:space-between;
+   margin-left:650px;
+   margin-right:100px;
+   font-size:25px;
+   margin-top:0px;
+   font-family: "Georgia", serif;
+   font-weight:bold;
+}
+
+
+#three{
+    font-style:none;
+    font-size:15px;
+    margin-top:10px;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    line-height:1.5;
+}
+
+#three a{
+    color:rgba(0,0,0,255,0.9);
+    text-decoration:none;
+}
+
+
+.itembar{
+    display:flex;
+    flex-direction:row;
+    margin-left:100px;
+    padding-top:150px;
+    jus padding-left:100px;tify-content:space-between;
+}
+
+.porductname{
+    text-align:center;
+    margin-top:5px;
+}
+ 
+.itembar{
+    margin-top:10px;
+    padding-left:55px;
+    justify-content:space-evenly;
+}
+
+
+
+
+
+.porductbar img{ 
+    height:80px;
+    width:110px;
+}
+
+
+
+.heading{
+    margin-left:173px;
+    margin-top:50px;
+}
+.heading1{
+color:grey;
+padding-left:5px;
+}
+
+.preorder {
+    position: relative;
+    width: 500px;
+}
+
+.preorder img {
+    width: 100%;
+    display: block;
+}
+
+.text {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}

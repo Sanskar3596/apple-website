@@ -1,0 +1,52 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.container{
+    height:400px;
+    width:300px;
+
+    background-color:yellowgreen;
+   
+    margin-left:40px;
+}
+
+.profile-image{
+    border-radius:50px;
+    height:100px;
+    width:100px;
+    margin-left:100px;
+    margin-top:20px;
+    border :2px solid black;
+}
+.img > p{
+    font-size:25px;
+    font-weight:bold;
+}
+p{
+    text-align:center;
+    font-size:20px;
+    color:white;
+    margin-top:20px;
+}
+
+
+.follow{
+    height:40px;
+    width:100px;
+    background-color:blue;
+margin-left:50px;
+margin-top:20px;
+color:white;
+font-size:20px;
+border-radius:5px;
+}
+
+.message{
+    height:40px;
+    width:100px;
+    border:2px solid blue;
+    border-radius:5px;
+    font-size:20px;  
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+    h1{
+       transform: translateX(-100px);
+        height : 600px;
+        margin: 30px;
+        width: 1000px;
+    }
+    
+    .show{
+        font-size: 40px;
+        transition-duration: 2s;
+        color: rgb(246, 246, 247);
+        background-color: rgb(245, 5, 5);
+        transform: translateX(250px);
+        height : 600px;
+        width: 1000px;
+    }
+    .box{
+        height : 600px;
+        margin: 30px;
+        width: 1000px;
+        transition-duration: 2s;
+        transform: translateX(1000px);
+        background-color: rgb(238, 232, 232);
+    }
+    .Bshow{
+        background-color: black;
+        height: 600px;
+        width: 1000px;
+        transform: translateX(250px);
+    }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <p>lorem*100</p>
+
+</body>
+<script>
+    let firstHeading = document.querySelectorAll("h1");
+    let box = document.querySelectorAll(".box");
+    let observel = new IntersectionObserver((entries)=>{
+        entries.forEach((value)=>{
+            console.log(value);
+            if(value.isIntersecting){
+               value.target.classList.add("show");
+            }
+            else{
+                value.target.classList.remove("show");
+            }
+        })
+    })
+    let observel2 = new IntersectionObserver((entries)=>{
+        entries.forEach((value)=>{
+            console.log(value);
+            if(value.isIntersecting){
+               value.target.classList.add("Bshow");
+            }
+            else{
+               value.target.classList.remove("Bshow");
+            }
+        })
+    })
+    firstHeading.forEach((element)=>{
+        observel.observe(element)
+    })
+    box.forEach((element)=>{
+        observel2.observe(element)
+    })
+    
+   
+    // if(firstHeading.)
+    // firstHeading.style.fontSize = "50px";
+</script>
+</html>

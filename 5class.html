@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 20px;
+            align-items: center;
+            background-color: aqua;
+            height: 100px;
+        }
+        
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .laptop{
+            display: block;
+        }
+        @media (max-width:700px){
+            .laptop{
+                display: none;
+            
+            .tablet{
+                display:block;
+            }
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            Logo
+        </div>
+        <ul>
+            <li class="laptop">Home</li>
+            <li class="laptop">About</li>
+            <li class="laptop">Contact</li>
+            <li class="laptop">Help</li>
+            <li class="tablet">&#9776</li>
+        </ul>
+    </nav>
+</body>
+</html>

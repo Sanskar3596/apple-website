@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    nav{
+      background-color: cadetblue;
+      padding: 0px 10px;
+      display: flex;
+      color: white;
+      align-items: center;
+      justify-content: space-between;
+      height: 100px;
+    }
+    #nav{
+      display: flex;
+      list-style-type: none;
+      gap: 20px;
+    }
+
+    .laptop{
+      display: block;
+    }
+    .tablet{
+      display: none;
+    }
+
+    #menu{
+      background-color: blueviolet;
+      height: 100vh;
+      font-size: 30px;
+      color: white;
+      position: fixed;
+      width: 100vw;
+      right: -100%;
+      transition-duration: 1s;
+      /* display: none; */
+    }
+
+    #menu.show{
+        right: 0;
+    }
+
+    @media (max-width: 700px) {
+      .laptop{
+        display: none;
+      }
+      .tablet{
+        display: block;
+      }
+      #menu > ul{
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>
+      logo
+    </div>
+    <ul id="nav">
+      <li class="laptop">Home</li>
+      <li class="laptop">About</li>
+      <li class="laptop">Contact</li>
+      <li class="laptop">Service</li>
+      <li class="tablet">&#9776</li>
+    </ul>
+  </nav>
+
+  <div id="menu">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Service</li>
+    </ul>
+  </div>
+</body>
+<script>
+  let button = document.querySelector(".tablet");
+  let showOption = false;
+  let box = document.getElementById("menu")
+
+  button.addEventListener("click", ()=>{
+    showOption = !showOption;
+    console.log(showOption)
+    if(showOption){
+        box.classList.add("show")
+    }
+    else{
+        box.classList.remove("show")
+    }
+  })
+</script>
+</html>
